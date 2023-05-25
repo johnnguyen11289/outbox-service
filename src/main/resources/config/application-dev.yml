@@ -32,9 +32,9 @@ spring:
       indent-output: true
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:mysql://localhost:3306/yodyNotification?useUnicode=true&characterEncoding=utf8&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC&createDatabaseIfNotExist=true
-    username: root
-    password:
+    url: jdbc:mysql://dev-unicorn-mysql.cexn69udh7zl.ap-southeast-1.rds.amazonaws.com:3306/dev_uniadm_delivery?useUnicode=true&characterEncoding=utf8&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC&createDatabaseIfNotExist=true
+    username: dev_uniadm_delivery
+    password: H64k7lr5N4xOEIcaSdyQ2QyN
     hikari:
       poolName: Hikari
       auto-commit: false
@@ -65,7 +65,17 @@ spring:
     locator:
       discovery:
         enabled: true
-
+  security:
+    oauth2:
+      client:
+        provider:
+          oidc:
+            issuer-uri: https://id.yody.vn/realms/yody-dev
+        registration:
+          oidc:
+            client-id: unicorn-admin
+            client-secret: LWMqO9asx3cjCGIMWAKD56pcu0lOCVAv
+            scope: openid, profile, email # last one for refresh tokens
 server:
   port: 8081
 
