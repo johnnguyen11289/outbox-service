@@ -1,0 +1,59 @@
+{
+  "generator-jhipster": {
+    "applicationIndex": 0,
+    "applicationType": "microservice",
+    "authenticationType": "oauth2",
+    "baseName": "yodyNotification",
+    "blueprints": [
+      {
+        "name": "generator-jhipster-nts-saas",
+        "version": "1.0.0-beta.13"
+      }
+    ],
+    "buildTool": "maven",
+    "cacheProvider": "redis",
+    "clientFramework": "no",
+    "clientPackageManager": "npm",
+    "creationTimestamp": 1684915799,
+    "databaseType": "sql",
+    "devDatabaseType": "mysql",
+    "dtoSuffix": "DTO",
+    "enableGradleEnterprise": false,
+    "enableHibernateCache": true,
+    "enableSwaggerCodegen": false,
+    "enableTranslation": true,
+    "entities": [],
+    "entitySuffix": "Entity",
+    "gradleEnterpriseHost": "",
+    "incrementalChangelog": true,
+    "jhiPrefix": "nts",
+    "jhipsterVersion": "7.9.3",
+    "jwtSecretKey": "",
+    "languages": ["en", "vi"],
+    "messageBroker": false,
+    "microfrontend": false,
+    "nativeLanguage": "en",
+    "otherModules": [
+      {
+        "name": "generator-jhipster-nts-saas",
+        "version": "1.0.0-beta.13"
+      }
+    ],
+    "packageFolder": "io/yody/notification",
+    "packageName": "io.yody.notification",
+    "pages": [],
+    "prodDatabaseType": "mysql",
+    "reactive": false,
+    "searchEngine": false,
+    "serverPort": "8081",
+    "serviceDiscoveryType": false,
+    "skipCheckLengthOfIdentifier": false,
+    "skipClient": true,
+    "skipFakeData": false,
+    "skipJhipsterDependencies": true,
+    "skipUserManagement": true,
+    "testFrameworks": [],
+    "websocket": false,
+    "withAdminUi": false
+  }
+}
