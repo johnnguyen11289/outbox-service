@@ -42,3 +42,18 @@ application {
   paginate * with pagination
 }
 
+@changeLogDate(20230524223903)
+@filter
+@skipFakeData
+entity Notification(notifications) {
+    subject String required
+    seen Boolean required
+    deleted Boolean required
+    deletedAt Instant
+    deletedBy String
+    version Integer required
+    createdBy String required
+    createdAt Instant required
+    updatedBy String
+    updatedAt Instant
+}

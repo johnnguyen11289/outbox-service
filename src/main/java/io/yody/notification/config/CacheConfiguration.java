@@ -86,6 +86,7 @@ public class CacheConfiguration {
             createCache(cm, org.nentangso.core.domain.NtsMetafieldEntity.class.getName(), jcacheConfiguration);
             createCache(cm, org.nentangso.core.domain.NtsOutboxEventEntity.class.getName(), jcacheConfiguration);
             createCache(cm, org.nentangso.core.domain.NtsOptionEntity.class.getName(), jcacheConfiguration);
+            createCache(cm, io.yody.notification.domain.NotificationEntity.class.getName(), jcacheConfiguration);
             // jhipster-needle-redis-add-entry
         };
     }
