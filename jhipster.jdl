@@ -42,3 +42,18 @@ application {
   paginate * with pagination
 }
 
+@changeLogDate(20230525225903)
+@filter
+@skipFakeData
+entity MobileDevices(mobile_devices) {
+    deviceId String required
+    deviceToken String required
+    deleted Boolean required
+    deletedAt Instant
+    deletedBy String
+    version Integer required
+    createdBy String required
+    createdAt Instant required
+    updatedBy String
+    updatedAt Instant
+}
