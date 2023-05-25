@@ -1,0 +1,68 @@
+{
+  "applications": ["yodyNotification"],
+  "changeLogDate": "20230525225903",
+  "changelogDate": "20230525031552",
+  "clientRootFolder": "yodyNotification",
+  "databaseType": "sql",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "mobile_devices",
+  "fields": [
+    {
+      "fieldName": "deviceId",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "deviceToken",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "deleted",
+      "fieldType": "Boolean",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "deletedAt",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "deletedBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "version",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "createdBy",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "createdAt",
+      "fieldType": "Instant",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "updatedBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "updatedAt",
+      "fieldType": "Instant"
+    }
+  ],
+  "fluentMethods": true,
+  "incrementalChangelog": true,
+  "jpaMetamodelFiltering": true,
+  "microserviceName": "yodyNotification",
+  "name": "MobileDevices",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceClass",
+  "skipFakeData": true
+}
